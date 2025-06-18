@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+
+    --radius: 0.75rem;
+
+    /* iOS system colors - Light mode */
+    --ios-blue: 211 100% 50%;
+    --ios-green: 142 70% 49%;
+    --ios-indigo: 241 61% 59%;
+    --ios-orange: 35 100% 50%;
+    --ios-pink: 346 100% 59%;
+    --ios-purple: 292 66% 59%;
+    --ios-red: 4 100% 59%;
+    --ios-teal: 198 100% 67%;
+    --ios-yellow: 48 100% 50%;
+
+    --ios-gray: 240 5% 57%;
+    --ios-gray2: 240 5% 69%;
+    --ios-gray3: 240 5% 79%;
+    --ios-gray4: 240 5% 83%;
+    --ios-gray5: 240 5% 91%;
+    --ios-gray6: 240 5% 96%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 240 3% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 5% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 5% 16%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 240 5% 16%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5% 26%;
+    --input: 240 5% 26%;
+    --ring: 211 100% 50%;
+
+    /* iOS system colors - Dark mode */
+    --ios-blue: 211 100% 50%;
+    --ios-green: 142 70% 49%;
+    --ios-indigo: 241 61% 59%;
+    --ios-orange: 35 100% 59%;
+    --ios-pink: 346 100% 59%;
+    --ios-purple: 292 66% 59%;
+    --ios-red: 4 100% 59%;
+    --ios-teal: 198 100% 67%;
+    --ios-yellow: 48 100% 50%;
+
+    --ios-gray: 240 5% 57%;
+    --ios-gray2: 240 5% 39%;
+    --ios-gray3: 240 5% 29%;
+    --ios-gray4: 240 5% 24%;
+    --ios-gray5: 240 5% 18%;
+    --ios-gray6: 240 5% 12%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* iOS-inspired font styles */
+.ios-heading-xl {
+  @apply text-2xl font-semibold tracking-tight;
+}
+
+.ios-heading-lg {
+  @apply text-xl font-semibold tracking-tight;
+}
+
+.ios-heading {
+  @apply text-lg font-semibold tracking-tight;
+}
+
+.ios-subheading {
+  @apply text-base font-medium;
+}
+
+.ios-body {
+  @apply text-base font-normal;
+}
+
+.ios-caption {
+  @apply text-sm font-normal;
+}
+
+.ios-small {
+  @apply text-xs font-normal;
+}
+
+/* iOS-inspired button styles */
+.ios-button-primary {
+  @apply bg-primary text-primary-foreground rounded-md py-2.5 px-5 font-medium text-sm;
+}
+
+.ios-button-secondary {
+  @apply bg-secondary text-secondary-foreground rounded-md py-2.5 px-5 font-medium text-sm;
+}
+
+.ios-button-outline {
+  @apply border border-border text-foreground rounded-md py-2.5 px-5 font-medium text-sm;
+}
+
+/* iOS-inspired card styles */
+.ios-card {
+  @apply bg-card rounded-2xl border border-border/40 shadow-sm;
+}
