@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 export const metadata = {
   title: "Sweepstakes App",
   description: "A mobile app for sweepstakes",
+    generator: 'v0.dev'
 }
 
 export const viewport: Viewport = {
