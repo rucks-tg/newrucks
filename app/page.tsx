@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Slim header with username and ticket balance */}
-      <header className="sticky top-0 z-10 flex items-center justify-between p-4 bg-ios-gray6 border-b border-ios-gray5">
+      <header className="sticky top-0 z-10 flex items-center justify-between p-2 bg-ios-gray6 border-b border-ios-gray5">
         <Link
           href="/profile"
           className="flex items-center gap-1 px-3 py-1 bg-ios-gray5 rounded-full hover:bg-ios-gray4 transition-colors"
